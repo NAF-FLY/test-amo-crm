@@ -10,7 +10,7 @@
 
 ## Задание 2
 
-#Live Version: https://naf-fly.github.io/test-amo-crm/
+# Live Version: https://naf-fly.github.io/test-amo-crm/
 
 Сверстайте страницу по макету.
 
