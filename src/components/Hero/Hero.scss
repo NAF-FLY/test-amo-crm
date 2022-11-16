@@ -1,0 +1,90 @@
+.hero {
+	margin-top: 90px;
+	// .hero__container
+	&__container {
+		display: flex;
+		justify-content: space-between;
+	}
+
+	// .hero__block
+	&__block {
+	}
+
+	// .hero__title
+	&__title {
+		font-family: 'Inter';
+		font-style: normal;
+		font-weight: 400;
+		font-size: 48px;
+		line-height: 58px;
+		margin-bottom: 30px;
+		span {
+			font-weight: 900;
+			background: linear-gradient(92deg, #fcb045 27.14%, #ff3f78 121.36%),
+				#e4e5ea;
+			-webkit-background-clip: text;
+			-webkit-text-fill-color: transparent;
+			background-clip: text;
+		}
+	}
+
+	// .hero__subtitle
+	&__subtitle {
+		font-family: 'Montserrat';
+		font-style: normal;
+		font-weight: 400;
+		font-size: 18px;
+		line-height: 22px;
+		max-width: 275px;
+	}
+
+	// .hero__subtext
+	&__subtext {
+		font-family: 'Inter';
+		font-style: normal;
+		font-weight: 500;
+		font-size: 18px;
+		line-height: 22px;
+	}
+
+	// .hero__link
+	&__link {
+	}
+}
+.left {
+	max-width: 365px;
+}
+.gradient-text {
+}
+.--default {
+}
+.right {
+	max-width: 300px;
+	text-align: end;
+}
+.--red {
+}
+.--yellow {
+}
+.list-reset {
+}
+.advantages-list {
+	// .advantages-list__item
+
+	&__item {
+	}
+
+	// .advantages-list__name
+
+	&__name {
+	}
+
+	// .advantages-list__about
+
+	&__about {
+	}
+}
+.btn {
+}
+.btn-blue {
+}
