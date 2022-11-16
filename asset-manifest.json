@@ -1,17 +1,17 @@
 {
   "files": {
     "main.css": "/test-amo-crm/static/css/main.e7158caa.css",
-    "main.js": "/test-amo-crm/static/js/main.7a4b262c.js",
+    "main.js": "/test-amo-crm/static/js/main.f5c5b2fd.js",
     "static/media/logo.svg": "/test-amo-crm/static/media/logo.500f13216c4604d88073577489b5b2d9.svg",
     "static/media/whatsapp.svg": "/test-amo-crm/static/media/whatsapp.e038e37bebe7488ffdb0b0f598f0baf2.svg",
     "static/media/viber.svg": "/test-amo-crm/static/media/viber.8651067213b4367e2784bd1f7f6e51d0.svg",
     "index.html": "/test-amo-crm/index.html",
     "static/media/telegram.svg": "/test-amo-crm/static/media/telegram.cfa4cb87fa5f886e40d7251bc15311ca.svg",
     "main.e7158caa.css.map": "/test-amo-crm/static/css/main.e7158caa.css.map",
-    "main.7a4b262c.js.map": "/test-amo-crm/static/js/main.7a4b262c.js.map"
+    "main.f5c5b2fd.js.map": "/test-amo-crm/static/js/main.f5c5b2fd.js.map"
   },
   "entrypoints": [
     "static/css/main.e7158caa.css",
-    "static/js/main.7a4b262c.js"
+    "static/js/main.f5c5b2fd.js"
   ]
 }
