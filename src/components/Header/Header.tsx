@@ -12,7 +12,7 @@ const Header = () => {
 		<header className='header'>
 			<div className='header__container'>
 				<div className='header__logo'>
-					<a href='foo'>
+					<a href='/'>
 						<img src={logo} alt='logo' />
 					</a>
 					<span>крупный интегратор CRM в Росcии и ещё 8 странах</span>
@@ -22,7 +22,7 @@ const Header = () => {
 						<ul className='menu__list'>
 							{navMenu.map((item, id) => (
 								<li className='menu__item' key={id}>
-									<a href='foo' className='menu__link'>
+									<a href='/' className='menu__link'>
 										{item}
 									</a>
 								</li>
@@ -41,13 +41,13 @@ const Header = () => {
 					</a>
 
 					<div className='contacts__social social'>
-						<a href='telegram' target='noopener' className='social__item'>
+						<a href='/' target='noopener' className='social__item'>
 							<img src={social1} alt='telegram' />
 						</a>
-						<a href='viber' target='noopener' className='social__item'>
+						<a href='/' target='noopener' className='social__item'>
 							<img src={social2} alt='viber' />
 						</a>
-						<a href='whatsapp' target='noopener' className='social__item'>
+						<a href='/' target='noopener' className='social__item'>
 							<img src={social3} alt='whatsapp' />
 						</a>
 					</div>

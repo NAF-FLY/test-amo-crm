@@ -14,12 +14,12 @@ const Footer = () => {
 						<div className='footer__column-title'>О компании</div>
 						<ul className='footer__column-items'>
 							<li className='footer__column-item'>
-								<a href='foo' className='footer__column-link'>
+								<a href='/' className='footer__column-link'>
 									Партнёрская программа
 								</a>
 							</li>
 							<li className='footer__column-item'>
-								<a href='foo' className='footer__column-link'>
+								<a href='/' className='footer__column-link'>
 									Вакансии
 								</a>
 							</li>
@@ -31,7 +31,7 @@ const Footer = () => {
 							<ul className='footer__column-items'>
 								{footerMenuPart1.map((item, id) => (
 									<li className='footer__column-item' key={id}>
-										<a href='foo' className='footer__column-link'>
+										<a href='/' className='footer__column-link'>
 											{item}
 										</a>
 									</li>
@@ -41,7 +41,7 @@ const Footer = () => {
 							<ul className='footer__column-items'>
 								{footerMenuPart2.map((item, id) => (
 									<li className='footer__column-item' key={id}>
-										<a href='foo' className='footer__column-link'>
+										<a href='/' className='footer__column-link'>
 											{item}
 										</a>
 									</li>
@@ -61,21 +61,13 @@ const Footer = () => {
 						+7 555 555-55-55
 					</a>
 					<div className='social-footer'>
-						<a
-							href='telegram'
-							target='noopener'
-							className='social-footer__link'
-						>
+						<a href='/' target='noopener' className='social-footer__link'>
 							<img src={social1} alt='telegram' />
 						</a>
-						<a href='viber' target='noopener' className='social-footer__link'>
+						<a href='/' target='noopener' className='social-footer__link'>
 							<img src={social2} alt='viber' />
 						</a>
-						<a
-							href='whatsapp'
-							target='noopener'
-							className='social-footer__link'
-						>
+						<a href='/' target='noopener' className='social-footer__link'>
 							<img src={social3} alt='whatsapp' />
 						</a>
 					</div>
@@ -86,7 +78,7 @@ const Footer = () => {
 			</div>
 			<div className='footer__copy'>
 				<div className='footer__rules'>©WELBEX 2022. Все права защищены.</div>
-				<a href='foo' target='noopener' className='footer__cors'>
+				<a href='/' target='noopener' className='footer__cors'>
 					Политика конфиденциальности
 				</a>
 			</div>
