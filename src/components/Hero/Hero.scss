@@ -1,6 +1,8 @@
 .hero {
 	margin-top: 90px;
 	margin-bottom: 70px;
+	overflow: hidden;
+
 	@media (max-width: 991.98px) {
 		margin-top: 70px;
 		margin-bottom: 0;

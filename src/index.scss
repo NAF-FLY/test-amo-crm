@@ -47,6 +47,7 @@ body {
 	font-size: 16px;
 	.lock & {
 		overflow: hidden;
+		touch-action: none;
 	}
 }
 
@@ -93,21 +94,7 @@ body {
 		top: 10%;
 		left: 36%;
 		@media (max-width: 479.98px) {
-			position: absolute;
-			width: 320px;
-			height: 445px;
-			left: -105px;
-			top: 15px;
-			background: radial-gradient(
-				238.53% 189.02% at 3.2% 3.49%,
-				rgba(255, 246, 233, 0.1) 0%,
-				rgba(26, 29, 35, 0.1) 26.62%,
-				rgba(26, 29, 35, 0.1) 52.1%,
-				rgba(26, 29, 35, 0.01) 70.17%,
-				rgba(26, 29, 35, 0) 100%
-			);
-			backdrop-filter: blur(7.5px);
-			box-shadow: none;
+			display: none;
 		}
 	}
 
@@ -155,8 +142,7 @@ body {
 		@media (max-width: 479.98px) {
 			width: 40px;
 			height: 40px;
-			right: -10px;
-			left: auto;
+			right: 10px;
 			top: 50%;
 		}
 	}
@@ -173,7 +159,7 @@ body {
 		transform: translate(-50%, 0px);
 		@media (max-width: 479.98px) {
 			top: 20%;
-			left: 100%;
+			left: 0;
 		}
 	}
 
