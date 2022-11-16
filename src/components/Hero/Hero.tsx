@@ -1,31 +1,15 @@
 import './Hero.scss'
 
-const promo = [
-	{
-		id: 1,
-		title: 'Виджеты',
-		subtitle: '30 готовых решений',
-	},
-	{
-		id: 2,
-		title: 'Виджеты',
-		subtitle: '30 готовых решений',
-	},
-	{
-		id: 3,
-		title: 'Виджеты',
-		subtitle: '30 готовых решений',
-	},
-	{
-		id: 4,
-		title: 'Виджеты',
-		subtitle: '30 готовых решений',
-	},
-]
+import { promoItems } from '../../data/dataItems'
 
 const Hero = () => {
 	return (
 		<section className='hero'>
+			<div className='blur__bg blur__bg-1'></div>
+			<div className='blur__bg blur__bg-2'></div>
+			<div className='blur__bg blur__bg-3'></div>
+			<div className='blur__bg blur__bg-4'></div>
+			<div className='blur__bg blur__bg-5'></div>
 			<div className='hero__container'>
 				<div className='hero__block left'>
 					<h1 className='hero__title'>
@@ -40,19 +24,19 @@ const Hero = () => {
 				<div className='hero__block right'>
 					<h2 className='hero__subtext'>
 						Вместе с&nbsp;
-						<span className='gradient-text --red'>бесплатной</span>{' '}
-						<span className='gradient-text --yellow'>консультацией </span>
+						<span>бесплатной </span>
+						<span>консультацией </span>
 						мы&nbsp;дарим:
 					</h2>
-					<ul className='list-reset advantages-list'>
-						<li className='advantages-list__item'>
-							<h3 className='advantages-list__name'>Виджеты</h3>
-							<p className='advantages-list__about'>30&nbsp;готовых решений</p>
-						</li>
+					<ul className='promo__items'>
+						{promoItems.map(item => (
+							<li className='promo__item' key={item.id}>
+								<h3 className='promo__name'>{item.title}</h3>
+								<p className='promo__info'>{item.subtitle}</p>
+							</li>
+						))}
 					</ul>
-					<a href='foo' className='btn btn-blue hero__link'>
-						Получить консультацию
-					</a>
+					<button className='button'>Получить консультацию</button>
 				</div>
 			</div>
 		</section>

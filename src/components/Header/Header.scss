@@ -1,27 +1,48 @@
 .header {
 	padding-top: 46px;
+	@media (max-width: 767.98px) {
+		padding: 15px 15px;
+		background: #0e1014;
+		position: relative;
+		z-index: 99;
+		overflow: scroll;
+		&::-webkit-scrollbar {
+			display: none;
+		}
+	}
+
 	// .header__container
 	&__container {
 		display: flex;
 		justify-content: space-between;
 	}
+
 	// .header__logo
 	&__logo {
 		max-width: 140px;
 		width: 100%;
 		display: flex;
 		flex-direction: column;
+		gap: 10px;
+		span {
+			font-family: 'Montserrat';
+			font-style: normal;
+			font-weight: 300;
+			font-size: 10px;
+			line-height: 12px;
+		}
+		@media (max-width: 991.98px) {
+			display: none;
+		}
 	}
-	span {
-		font-family: 'Montserrat';
-		font-style: normal;
-		font-weight: 300;
-		font-size: 10px;
-		line-height: 12px;
-	}
+
 	&__contacts {
 		display: flex;
 		margin-top: 7px;
+		white-space: nowrap;
+		@media (max-width: 767.98px) {
+			display: none;
+		}
 	}
 }
 
@@ -29,17 +50,43 @@
 	flex: 1 1 auto;
 	margin-left: 52px;
 	margin-top: 7px;
+
 	// .menu__list
 	&__list {
 		display: flex;
+		flex-wrap: wrap;
 		gap: 30px;
+		@media (max-width: 991.98px) {
+			gap: 20px;
+		}
+		@media (max-width: 767.98px) {
+			justify-content: center;
+			flex-wrap: nowrap;
+			gap: 17px;
+			font-size: 12px;
+			&:last-child {
+				margin-right: 15px;
+			}
+		}
 	}
+
 	// .menu__link
 	&__link {
 		font-family: 'Inter';
 		font-style: normal;
 		font-weight: 500;
 		line-height: 19px;
+		&:hover {
+			color: #fdc75a;
+		}
+		@media (max-width: 767.98px) {
+			text-transform: uppercase;
+			padding: 0;
+		}
+	}
+
+	@media (max-width: 767.98px) {
+		margin: 0;
 	}
 }
 
@@ -52,13 +99,25 @@
 		line-height: 19px;
 		text-align: right;
 		margin-right: 45px;
+		@media (max-width: 991.98px) {
+			margin-right: 25px;
+		}
 	}
 }
 
 .social {
 	display: flex;
 	gap: 30px;
-	// .social_item
-	&_item {
+	@media (max-width: 767.98px) {
+		display: none;
+	}
+	// .social__item
+	&__item {
+		transition: transform 0.2s ease 0s;
+		@media (any-hover: hover) {
+			&:hover {
+				transform: scale(1.25);
+			}
+		}
 	}
 }

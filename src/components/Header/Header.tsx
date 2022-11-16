@@ -5,7 +5,7 @@ import social1 from '../../images/telegram.svg'
 import social2 from '../../images/viber.svg'
 import social3 from '../../images/whatsapp.svg'
 
-const menu = ['Услуги', 'Виджеты', 'Интеграции', 'Кейсы', 'Сертификаты']
+const navMenu = ['Услуги', 'Виджеты', 'Интеграции', 'Кейсы', 'Сертификаты']
 
 const Header = () => {
 	return (
@@ -20,7 +20,7 @@ const Header = () => {
 				<div className='header__menu menu'>
 					<nav>
 						<ul className='menu__list'>
-							{menu.map((item, id) => (
+							{navMenu.map((item, id) => (
 								<li className='menu__item' key={id}>
 									<a href='foo' className='menu__link'>
 										{item}
@@ -41,13 +41,13 @@ const Header = () => {
 					</a>
 
 					<div className='contacts__social social'>
-						<a href='telegram' target='noopener' className='social_item'>
+						<a href='telegram' target='noopener' className='social__item'>
 							<img src={social1} alt='telegram' />
 						</a>
-						<a href='viber' target='noopener' className='social_item'>
+						<a href='viber' target='noopener' className='social__item'>
 							<img src={social2} alt='viber' />
 						</a>
-						<a href='whatsapp' target='noopener' className='social_item'>
+						<a href='whatsapp' target='noopener' className='social__item'>
 							<img src={social3} alt='whatsapp' />
 						</a>
 					</div>
